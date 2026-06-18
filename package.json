@@ -1,0 +1,28 @@
+{
+  "name": "hello_template",
+  "version": "1.0.0",
+  "description": "**Template repository for getting started quickly with Foundry projects**",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabhanshu99/Foundry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/prabhanshu99/Foundry/issues"
+  },
+  "homepage": "https://github.com/prabhanshu99/Foundry#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  }
+}
