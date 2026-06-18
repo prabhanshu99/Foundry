@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.13;
 
-contract Contract {
+contract Counter {
     uint public num;
     
     constructor(uint _num) {

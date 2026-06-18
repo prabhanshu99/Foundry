@@ -6,18 +6,19 @@ import "forge-std/Test.sol";
 import "src/Counter.sol";
 
 contract TestCounter is Test {
-    Contract c;
+    Counter c;
 
     function setUp() public {
-        c = new Contract();
+        c = new Counter(100);
     }
 
-    function testBar() public {
-        assertEq(uint256(1), uint256(1), "ok");
+    function testIncrement() public {
+        c.increment();
+        assertEq(c.num(), 101);
     }
 
-    function testFoo(uint256 x) public {
-        vm.assume(x < type(uint128).max);
-        assertEq(x + x, x * 2);
+    function testDecrement() public {
+        c.decrement();
+        assertEq(c.num(), 99);
     }
 }
